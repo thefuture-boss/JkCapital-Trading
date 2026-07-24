@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+
+  --surface: #111111;
+  --surface-2: #18181b;
+
+  --gold: #facc15;
+  --gold-hover: #fde047;
+
+  --border: rgba(250, 204, 21, 0.18);
+
+  --text-secondary: #a1a1aa;
+
+  --radius: 18px;
+
+  --transition: 0.25s ease;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.section {
+  max-width: 1280px;
+  margin: auto;
+  padding: 80px 24px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-3px);
+}
+
+.gold-title {
+  color: var(--gold);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.primary-button {
+  background: var(--gold);
+  color: black;
+  padding: 14px 28px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.primary-button:hover {
+  background: var(--gold-hover);
+}
+
+.secondary-button {
+  border: 1px solid var(--border);
+  padding: 14px 28px;
+  border-radius: 14px;
+  transition: var(--transition);
+}
+
+.secondary-button:hover {
+  border-color: var(--gold);
+}
